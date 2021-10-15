@@ -65,7 +65,7 @@ section {
     background: -webkit-linear-gradient(90deg, #9294fcec, #766dff, #7566fd, #aeadfd);
     /* padding: 15px; */
     /* border: 2px solid red; */
-    height: 767px;
+    height: 758px;
     width: 100%;
     overflow: hidden;
 }
@@ -131,7 +131,7 @@ section {
     animation: waving 30s linear infinite;
     opacity: 1;
     animation-delay: 0s;
-    bottom: 0px;
+    bottom: -8px;
 }
 
 #wave-2 {
@@ -227,10 +227,22 @@ td {
 
 #proj_sec {
     display: flex;
+    flex-wrap: wrap;
+    /* position: absolute; */
     padding-top: 25px;
     flex-direction: row;
     align-content: center;
     align-items: center;
+    /* height: 1270px; */
+}
+
+#proj_sec h2 {
+    font-size: 27px;
+    font-weight: 750;
+    text-align: center;
+    background: -webkit-linear-gradient(right, #2da6ec, #192ff5, #0f95ee, #1951eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -240,6 +252,7 @@ td {
     width: 41%;
     height: 604px;
     overflow: hidden;
+    padding-top: 10px;
     /* transition: all 0.3s ease; */
 }
 
@@ -292,6 +305,26 @@ td {
 }
 
 
+/* skills section */
+
+#skills {
+    background: #887efd;
+    /* margin-top: 30px; */
+    overflow: visible;
+    height: 400px;
+    color: white;
+}
+
+#skills h2 {
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#svg-2 {
+    position: absolute;
+}
+
+
 /* utility class */
 
 .center {
@@ -315,14 +348,15 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-h2 {
+
+/* h2 {
     font-size: 19px;
     font-weight: 750;
     text-align: center;
     background: -webkit-linear-gradient(right, #2da6ec, #192ff5, #0f95ee, #1951eb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 
 /* h1::before {
