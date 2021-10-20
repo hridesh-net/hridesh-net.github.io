@@ -70,6 +70,21 @@ section {
     overflow: hidden;
 }
 
+@media only screen and (min-width: 1550px) {
+    .heading {
+        height: 1234px;
+        align-items: center;
+    }
+}
+
+
+/* @media only screen and (min-width: 1025px) {
+    .heading {
+        height: 683px;
+        align-items: center;
+    }
+} */
+
 .logo_image {
     /* box-sizing: content-box; */
     position: absolute;
@@ -81,6 +96,7 @@ section {
     border: 5px solid rgb(233, 230, 230);
     border-radius: 50%;
     background: whitesmoke;
+    /* backdrop-filter: blur(4px); */
     overflow: hidden;
     justify-content: center;
     justify-items: center;
@@ -88,6 +104,25 @@ section {
     box-shadow: 1px 3px 5px 3px rgba(64, 64, 68, 0.575);
     z-index: 3;
 }
+
+@media only screen and (min-width: 1550px) {
+    .logo_image {
+        top: 22em;
+        left: 50em;
+        height: 10em;
+        width: 10em;
+    }
+}
+
+
+/* @media only screen and (min-width: 1025px) {
+    .logo_image {
+        top: 7em;
+        left: 27em;
+        height: 8em;
+        width: 8em;
+    }
+} */
 
 .logo_image img {
     height: 72%;
@@ -102,10 +137,26 @@ section {
     width: 45%;
     border-radius: 5%;
     /* border: 2px solid blue; */
-    box-shadow: 1px 2px 3px 4px rgba(103, 103, 104, 0.459);
+    /* box-shadow: 1px 2px 3px 3px rgba(124, 124, 124, 0.37); */
     background: rgba(253, 253, 253, 0.952);
+    /* backdrop-filter: blur(4px); */
     z-index: 2;
 }
+
+@media only screen and (min-width: 1550px) {
+    #intro {
+        margin: 0px auto;
+        height: 358px;
+        padding: 20px;
+    }
+}
+
+
+/* @media only screen and (min-width: 1025px) {
+    #intro {
+        margin: 1em auto 0px;
+    }
+} */
 
 #intro div {
     display: flex;
@@ -186,6 +237,13 @@ section {
     color: steelblue;
 }
 
+@media only screen and (min-width: 1550px) {
+    #about-us-table {
+        padding: 1em;
+        font-size: 26px;
+    }
+}
+
 tbody {
     display: table-row-group;
     vertical-align: middle;
@@ -234,6 +292,13 @@ td {
     align-content: center;
     align-items: center;
     /* height: 1270px; */
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1550px) {
+    #proj_sec {
+        height: 1214px;
+    }
 }
 
 #proj_sec h2 {
@@ -245,6 +310,12 @@ td {
     -webkit-text-fill-color: transparent;
 }
 
+@media only screen and (min-width: 1550px) {
+    #proj_sec h2 {
+        font-size: 40px;
+    }
+}
+
 
 /* git api section */
 
@@ -254,6 +325,19 @@ td {
     overflow: hidden;
     padding-top: 10px;
     /* transition: all 0.3s ease; */
+}
+
+@media only screen and (min-width: 1550px) {
+    #git_api {
+        width: 41%;
+        height: 919px;
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    #HriRepos {
+        font-size: 24px;
+    }
 }
 
 #git_api:hover {
@@ -307,21 +391,96 @@ td {
 
 /* skills section */
 
-#skills {
+#skill_sec {
     background: #887efd;
     /* margin-top: 30px; */
     overflow: visible;
     height: 400px;
     color: white;
+    margin-top: 205px;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 1550px) {
+    #skill_sec {
+        margin-top: 347px;
+        height: 710px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 1550px) {
+    #skills {
+        margin-top: 38px;
+    }
 }
 
 #skills h2 {
     font-weight: 600;
     font-family: sans-serif;
+    margin-bottom: 9px;
+}
+
+@media only screen and (min-width: 1550px) {
+    #skill_sec h2 {
+        font-size: 4rem;
+    }
+}
+
+.skl {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1550px) {
+    .skl {
+        margin: 0 35px;
+    }
+}
+
+#skills img {
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and (min-width: 1550px) {
+    #skills img {
+        height: 73px;
+        width: 73px;
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    #skills b {
+        font-size: 34px;
+    }
+}
+
+#svg-1 {
+    position: absolute;
+    z-index: -1;
 }
 
 #svg-2 {
     position: absolute;
+}
+
+@media only screen and (min-width: 1550px) {
+    #svg-2 {
+        position: inherit;
+        margin-top: -2px;
+    }
 }
 
 
@@ -346,6 +505,12 @@ h1 {
     background: -webkit-linear-gradient(right, #2da6ec, #192ff5, #0f95ee, #1951eb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 1550px) {
+    .Name {
+        font-size: 64px;
+    }
 }
 
 
