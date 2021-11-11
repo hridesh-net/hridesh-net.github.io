@@ -32,8 +32,8 @@ section {
 
  ::-webkit-scrollbar-track {
     /* box-shadow: inset 0 0 5px grey; */
-    background: transparent;
-    border-radius: 10px;
+    background: rgb(32, 32, 32);
+    /* border-radius: 10px; */
     color: transparent;
 }
 
@@ -62,10 +62,11 @@ section {
     /* justify-items: center;
     align-items: center;
     align-content: center; */
-    background: -webkit-linear-gradient(90deg, #9294fcec, #766dff, #7566fd, #aeadfd);
+    /* background: -webkit-linear-gradient(90deg, #9294fcec, #766dff, #7566fd, #aeadfd); */
+    background: rgb(39, 48, 54);
     /* padding: 15px; */
     /* border: 2px solid red; */
-    height: 758px;
+    height: 766px;
     width: 100%;
     overflow: hidden;
 }
@@ -94,7 +95,8 @@ section {
     height: 9em;
     width: 9em;
     border: 5px solid rgb(233, 230, 230);
-    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
     background: whitesmoke;
     /* backdrop-filter: blur(4px); */
     overflow: hidden;
@@ -138,7 +140,7 @@ section {
     border-radius: 5%;
     /* border: 2px solid blue; */
     /* box-shadow: 1px 2px 3px 3px rgba(124, 124, 124, 0.37); */
-    background: rgba(253, 253, 253, 0.952);
+    /* background: rgba(253, 253, 253, 0.952); */
     /* backdrop-filter: blur(4px); */
     z-index: 2;
 }
@@ -234,7 +236,7 @@ section {
     border-collapse: separate;
     border-spacing: 0 5px;
     padding-bottom: .5em;
-    color: steelblue;
+    color: whitesmoke;
 }
 
 @media only screen and (min-width: 1550px) {
@@ -502,7 +504,9 @@ h1 {
     font-size: 35px;
     font-weight: 750;
     text-align: center;
-    background: -webkit-linear-gradient(right, #2da6ec, #192ff5, #0f95ee, #1951eb);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background: -webkit-linear-gradient(right, #2da6ec, #192ff5, #0f95ee, #1951eb); */
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

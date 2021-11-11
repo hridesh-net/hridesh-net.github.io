@@ -5,124 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hridesh Sharma</title>
+    <title>Hriddesh Profile</title>
 </head>
-<link rel="stylesheet" href="css/profile.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<link rel="stylesheet" href="css/styling.css">
 
 <body>
-    <section class="heading" id="cover">
-        <!-- <div class="intr"> -->
-        <div class="logo_image">
-            <img src="img/profile.png" alt="">
-        </div>
-        <div id="intro">
-            <h1 class="Name center underline">Hridesh Sharma</h1>
-            <div>
-                <table class="center" id="about-us-table">
-                    <tbody>
-                        <tr>
-                            <td class="table-row-label">
-                                <h3 class="table-row-label-text">Course</h3>
-                                <b class="table-row-label-seperator">:</b>
-                            </td>
-                            <td> </td>
-                            <td class="table-row-value">
-                                B. Tech.
-                            </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td class="table-row-label">
-                                <h3 class="table-row-label-text">Branch</h3>
-                                <b class="table-row-label-seperator">:</b>
-                            </td>
-                            <td> </td>
-                            <td class="table-row-value">
-                                Information Technology
-                            </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td class="table-row-label">
-                                <h3 class="table-row-label-text">Currently Working</h3>
-                                <b class="table-row-label-seperator">:</b>
-                            </td>
-                            <td> </td>
-                            <td class="table-row-value">
-                                <!-- 8<sup>th</sup> Nov. 2001 -->
-                                Web-Development
-                            </td>
-                            <td> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <!-- </div> -->
-        <div class="wave" id="wave-1"></div>
-        <div class="wave" id="wave-2"></div>
-        <div class="wave" id="wave-3"></div>
-        <div class="wave" id="wave-4"></div>
-    </section>
+    <!-- ####### HEADER ####### -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Hridesh</a>
 
-    <section id="proj_sec">
-        <div id="git_api" data-aos="fade-up-right" data-aos-duration="3000" data-aos-easing="ease-in-sine">
-            <h2 class="center underline">My Project repo links</h2>
-            <ul id="HriRepos" class="list-group mx-auto mb-5" style="width: 500px">
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">
+                            <i class="uil uil-estate"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-file-alt"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link">
+                            <i class="uil uil-briefcase-alt"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">
+                            <i class="uil uil-scenery"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class="uil uil-message"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
 
-            </ul>
-        </div>
-        <div id="hosted_links" data-aos="fade-left" data-aos-duration="3000">
-            <div class="project" id="pro-1" data-aos="zoom-in-left" data-aos-duration="1500">
-                <a href="https://hridesh-net.github.io/search-icon.github.io/">
-                    <img src="/img/search.PNG" alt=""></a>
+            <div class="nav_btns">
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
             </div>
-            <div class="project" id="pro-2" data-aos="zoom-in-down" data-aos-duration="1500">
-                <a href="https://hridesh-net.github.io/dreamstudio.github.io/">
-                    <img src="img/dreamstudio.PNG" alt=""></a>
-            </div>
-            <div class="project" id="pro-3" data-aos="zoom-in-left" data-aos-duration="1500">
-                <a href="https://hridesh-net.github.io/hamburger.github.io/">
-                    <img src="img/hamburger.PNG" alt=""></a>
-            </div>
-        </div>
-    </section>
-    <svg id="svg-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#887efd" fill-opacity="1" d="M0,192L80,165.3C160,139,320,85,480,96C640,107,800,181,960,186.7C1120,192,1280,128,1360,96L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-    <section id="skill_sec">
-        <h2 class="center" data-aos="fade-up">Skills</h2>
-        <div id="skills">
-            <div class="skl" id="skill-1" data-aos="zoom-in">
-                <img src="img/c.png" alt="">
-                <b>C/C++</b>
-            </div>
-            <div class="skl" id="skill-2" data-aos="zoom-in">
-                <img src="img/javascript.png" alt="">
-                <b>javascript</b>
-            </div>
-            <div class="skl" id="skill-3" data-aos="zoom-in">
-                <img src="img/css.png" alt="">
-                <b>CSS</b>
-            </div>
-            <div class="skl" id="skill-4" data-aos="zoom-in">
-                <img src="img/sql-open-file-format.png" alt="">
-                <b>My SQL</b>
-            </div>
-            <div class="skl" id="skill-5" data-aos="zoom-in">
-                <img src="img/algorithm.png" alt="">
-                <b>D.S.A</b>
-            </div>
-        </div>
-    </section>
-    <svg id="svg-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#887efd" fill-opacity="1" d="M0,192L80,165.3C160,139,320,85,480,96C640,107,800,181,960,186.7C1120,192,1280,128,1360,96L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/gitprofile.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
+        </nav>
+    </header>
 </body>
 
 </html>
