@@ -27,3 +27,22 @@ function linkAction() {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+// ############ ACCORDION SKILLS ##############
+const skillsCon = document.getElementsByClassName('skills_content');
+const skillsHeader = document.querySelectorAll('.skills_header');
+
+function togskills() {
+    let itemClass = this.parentNode.ClassName
+
+    for (i = 0; i < skillsCon.length; i++) {
+        skillsCon[i].className = 'skills_content skills_close'
+    }
+    if (itemClass === 'skills_content skills_close') {
+        this.parentNode.className = 'skills_content skills_open'
+    }
+}
+
+skillsHeader.forEach((el) => {
+    el.addEventListener('click', togskills)
+})
