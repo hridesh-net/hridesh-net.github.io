@@ -239,6 +239,51 @@ img {
 }
 
 
+/* ##################### COLOR THEMES ##################### */
+
+.theme_box {
+    position: absolute;
+    bottom: 12px;
+}
+
+.color_pallet {
+    display: inline-flex;
+    /* position: unset;
+    bottom: 2px; */
+    margin: auto 2px;
+    /* border: 1px solid black; */
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    justify-content: space-between;
+}
+
+
+/* puprple 250 - Green 142 - blue 230 - pink 340 */
+
+#color_purple {
+    background-color: hsl(250, 69%, 61%);
+}
+
+#color_green {
+    background-color: hsl(142, 69%, 61%);
+}
+
+#color_blue {
+    background-color: hsl(230, 69%, 61%);
+}
+
+#color_pink {
+    background-color: hsl(340, 69%, 61%);
+}
+
+.active_color {
+    height: 17px;
+    width: 17px;
+    border: 2.5px solid hsl(var(--hue-color), 70%, 47%);
+}
+
+
 /* ################### HOME ################# */
 
 .home_container {

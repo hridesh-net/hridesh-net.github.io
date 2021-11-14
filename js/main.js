@@ -86,3 +86,21 @@ let swiper = new Swiper(".portfolio_container", {
     mousewheel: true,
     keyboard: true,
 });
+
+// ############# PAGE THEME #############
+// const pallet = document.getElementsByClassName('color_pallet');
+
+// function toggleThemes() {
+//     let colorClass = this.parentNode.className
+
+//     for (i = 0; i < pallet.length; i++) {
+//         pallet[i].className = 'color_pallet nav_icon'
+//     }
+//     if (colorClass === 'color_pallet nav_icon') {
+//         this.parentNode.className = 'color_pallet nav_icon active_color'
+//     }
+// }
+
+// pallet.forEach((elem) => {
+//     elem.addEventListener('click', toggleThemes)
+// })
