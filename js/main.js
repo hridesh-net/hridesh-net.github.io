@@ -88,19 +88,17 @@ let swiper = new Swiper(".portfolio_container", {
 });
 
 // ############# PAGE THEME #############
-// const pallet = document.getElementsByClassName('color_pallet');
+const pallet = document.querySelectorAll('.color_pallet');
 
-// function toggleThemes() {
-//     let colorClass = this.parentNode.className
+pallet.forEach(color => {
+    color.addEventListener('click', () => {
+        for (j = 0; j < pallet.length; j++) {
+            pallet[j].className = 'color_pallet nav_icon';
+        }
 
-//     for (i = 0; i < pallet.length; i++) {
-//         pallet[i].className = 'color_pallet nav_icon'
-//     }
-//     if (colorClass === 'color_pallet nav_icon') {
-//         this.parentNode.className = 'color_pallet nav_icon active_color'
-//     }
-// }
+        let dataColor = color.getAttribute('data-color');
+        document.querySelector(':root').style.setProperty('--hue-color', dataColor);
 
-// pallet.forEach((elem) => {
-//     elem.addEventListener('click', toggleThemes)
-// })
+        color.classList.add('active_color');
+    })
+})
