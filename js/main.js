@@ -29,6 +29,24 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
+
+// ############# PAGE THEME #############
+const pallet = document.querySelectorAll('.color_pallet');
+
+pallet.forEach(color => {
+    color.addEventListener('click', () => {
+        for (j = 0; j < pallet.length; j++) {
+            pallet[j].className = 'color_pallet nav_icon';
+        }
+
+        let dataColor = color.getAttribute('data-color');
+        document.querySelector(':root').style.setProperty('--hue-color', dataColor);
+
+        color.classList.add('active_color');
+    })
+})
+
+
 // ############ ACCORDION SKILLS ##############
 const skillsContent = document.getElementsByClassName('skills_content'),
     skillsHeader = document.querySelectorAll('.skills_header')
@@ -86,19 +104,3 @@ let swiper = new Swiper(".portfolio_container", {
     mousewheel: true,
     keyboard: true,
 });
-
-// ############# PAGE THEME #############
-const pallet = document.querySelectorAll('.color_pallet');
-
-pallet.forEach(color => {
-    color.addEventListener('click', () => {
-        for (j = 0; j < pallet.length; j++) {
-            pallet[j].className = 'color_pallet nav_icon';
-        }
-
-        let dataColor = color.getAttribute('data-color');
-        document.querySelector(':root').style.setProperty('--hue-color', dataColor);
-
-        color.classList.add('active_color');
-    })
-})
