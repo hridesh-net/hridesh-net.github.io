@@ -46,6 +46,9 @@ pallet.forEach(color => {
     })
 })
 
+// ############### PAGE BACKGROUND THEME ##################
+const bg_color = document.getElementById('theme');
+
 
 // ############ ACCORDION SKILLS ##############
 const skillsContent = document.getElementsByClassName('skills_content'),

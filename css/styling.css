@@ -5,6 +5,7 @@
 /* ######-Variable CSS-###### */
 
 :root {
+    --bg-color: white;
     --header-height: 3rem;
     /* ####-Colors-#### */
     /* Change favorite color */
@@ -79,6 +80,7 @@ html {
 }
 
 body {
+    background-color: var(--bg-color);
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -229,6 +231,30 @@ img {
 
 .nav_close:hover {
     color: var(--first-color-alt);
+}
+
+
+/* ############# Page Theme ############## */
+
+#theme {
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    /* display: -moz-box; */
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 3px;
+}
+
+#theme-btn {
+    /* border: 2px solid red; */
+    background-color: black;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
 }
 
 
